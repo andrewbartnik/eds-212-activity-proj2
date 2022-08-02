@@ -49,7 +49,7 @@ ggplot(data=penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = species
 Jitter!!
 
 ```{r}
-ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) + geom_jitter() + labs(x = 'Species (Penguin)', y = 'Flipper length (mm)', title = 'Penguin Species vs Flipper length (mm)')
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm, color = species)) + geom_jitter() + labs(x = 'Species (Penguin)', y = 'Flipper length (mm)', title = 'Penguin Species vs Flipper length (mm)')
 ```
 
 
