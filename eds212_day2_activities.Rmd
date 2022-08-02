@@ -37,6 +37,19 @@ eval(D2)
 
 D3 <- D(ex3, 't')
 eval(D3)
+
+```
+
+```{r}
+head(penguins)
+ggplot(data=penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = species)) + geom_point() + 
+  labs( x = 'Bill Depth (mm)', y = 'Bill Length (mm)', title = ' Penguin bill length (mm) versus bill depth (mm)')
+```
+
+Jitter!!
+
+```{r}
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) + geom_jitter() + labs(x = 'Species (Penguin)', y = 'Flipper length (mm)', title = 'Penguin Species vs Flipper length (mm)')
 ```
 
 
